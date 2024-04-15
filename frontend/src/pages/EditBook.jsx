@@ -40,7 +40,7 @@ const handleEditBook =()=>{
     publisher
   };
   setLoading(true);
-  axios.put(`http://localhost:5555/books/${id}`, data)
+  axios.put(`https://full-stack-book-store-app-react-node.vercel.app/books/${id}`, data)
         .then(()=>{
           setLoading(false);
           enqueueSnackbar("Book Edited successfully", {variant : 'success'});
